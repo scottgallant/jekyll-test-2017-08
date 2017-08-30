@@ -53,3 +53,7 @@ fields:
     name: lots_o__text
     description: This is a text area with WYSIWYG super powers (can also be set to
       Markdown)
+- type: image_gallery
+  name: image_gallery
+  label: Image gallery
+  description: Just a plain old array of strings (that map to images)
