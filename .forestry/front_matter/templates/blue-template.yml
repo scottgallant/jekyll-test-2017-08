@@ -47,7 +47,7 @@ fields:
   description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
     users to crop images on the fly here
 - type: text
-  name: blue
+  name: layout
   label: layout
   description: This field has a default value. So all new pages will automatically
     be set to "blue"
