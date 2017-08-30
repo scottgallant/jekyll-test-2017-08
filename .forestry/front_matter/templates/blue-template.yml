@@ -7,24 +7,6 @@ fields:
   name: title
   label: Title
   description: 'This is a title field. Good for a plain ol'' string. '
-- type: datetime
-  name: date
-  label: Date
-  description: 'This is a date field. But it''s hidden (from editors). '
-  hidden: true
-  config:
-    date_format: MM/DD/YYYY
-- type: file
-  name: gallery
-  label: Gallery
-  description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
-    users to crop images on the fly here
-- type: text
-  name: blue
-  label: layout
-  description: This field has a default value. So all new pages will automatically
-    be set to "blue"
-  default: blue
 - type: field_group_list
   label: Bus Schedules
   name: bus_schedules
@@ -53,6 +35,24 @@ fields:
     name: lots_o__text
     description: This is a text area with WYSIWYG super powers (can also be set to
       Markdown)
+- type: datetime
+  name: date
+  label: Date
+  description: 'This is a date field. But it''s hidden (from editors). '
+  hidden: true
+  config:
+    date_format: MM/DD/YYYY
+- type: file
+  name: gallery
+  label: Gallery
+  description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
+    users to crop images on the fly here
+- type: text
+  name: blue
+  label: layout
+  description: This field has a default value. So all new pages will automatically
+    be set to "blue"
+  default: blue
 - type: image_gallery
   name: image_gallery
   label: Image gallery
