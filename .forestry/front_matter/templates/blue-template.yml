@@ -35,11 +35,11 @@ fields:
 - type: field_group_list
   label: Bus Schedules
   name: bus_schedules
-  description: 'This is a repeatable group of fields. It can be infinitely nested. '
+  description: ''
   fields:
   - type: text
     name: name_of_bus
-    label: Name of bus
+    label: Bus Name
   - type: ''
     name: bus_number
     label: Bus number
