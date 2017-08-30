@@ -26,6 +26,10 @@ fields:
     wysiwyg: true
     schema:
       format: html
+- type: image_gallery
+  name: red_gallery_field
+  label: 'Red Gallery '
+  description: 'FYI: You can choose an upload directory for your images in your settings'
 - type: select
   name: select_from_related_blue_pages
   config:
@@ -36,9 +40,5 @@ fields:
   description: Select from related Red pages
 - type: boolean
   name: turned_on
-  label: Turned on?
+  label: 'Is it on? '
   description: Boolean
-- type: image_gallery
-  name: red_gallery_field
-  label: 'Red Gallery '
-  description: 'FYI: You can choose an upload directory for your images in your settings'
