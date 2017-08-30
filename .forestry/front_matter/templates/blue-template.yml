@@ -51,4 +51,4 @@ fields:
   label: layout
   description: This field has a default value. So all new pages will automatically
     be set to "blue"
-  default: blue
+  default: post
