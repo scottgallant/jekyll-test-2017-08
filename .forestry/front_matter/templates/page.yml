@@ -7,3 +7,9 @@ fields:
 - type: datetime
   name: date
   label: Date
+- type: text
+  name: layout
+  label: Layout
+- type: text
+  label: Permalink
+  name: permalink
