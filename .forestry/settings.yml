@@ -9,3 +9,6 @@ webhook_url:
 collections:
   _blue:
     default_front_matter_template: blue-template
+collections:
+  _red:
+    default_front_matter_template: red-template

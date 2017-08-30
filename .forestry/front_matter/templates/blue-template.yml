@@ -1,7 +1,5 @@
 ---
 pages:
-- _blue/test-1.md
-- _blue/test.md
 hide_body: false
 fields:
 - type: text
