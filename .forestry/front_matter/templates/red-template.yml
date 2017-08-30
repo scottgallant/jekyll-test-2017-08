@@ -16,8 +16,8 @@ fields:
   - apples
   - oranges
 - type: textarea
-  name: hidden_body
-  label: Hidden body
+  name: textarea
+  label: textarea
   description: A text area with WYSIWYG super powers
   default: The big WYSIWYG body editor in the right column is set to "hidden" for
     these pages.<br><br>…Also, this field has some default text. <br>
