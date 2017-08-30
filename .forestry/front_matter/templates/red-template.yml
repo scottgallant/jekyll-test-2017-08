@@ -2,10 +2,9 @@
 hide_body: true
 fields:
 - type: text
-  name: hidden_body
-  label: Hidden body
-  default: The big WYSIWYG body editor in the right column is set to "hidden" for
-    these pages.
+  name: title
+  label: Title
+  default: ''
 - type: datetime
   default: Invalid date
   label: Date and time
