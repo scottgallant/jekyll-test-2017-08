@@ -1,10 +1,19 @@
 ---
 hide_body: true
 fields:
+- type: text
+  name: title
+  label: Title
+  default: The big WYSIWYG body editor in the right column is set to "hidden" for
+    these pages.
+- type: tag_list
+  name: tags
+  label: Tags
 - type: textarea
   name: hidden_body
   label: Hidden body
-  description: The big WYSIWYG body editor is set to "hidden" for these pages.
+  description: The big WYSIWYG body editor in the right column is set to "hidden"
+    for these pages.
   default: Also, this field has some default text. <br><br>Give your editing team
     a head start with fancy Default Text TM
   config:
