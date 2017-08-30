@@ -5,8 +5,8 @@ fields:
   name: hidden_body
   label: Hidden body
   description: The big WYSIWYG body editor is set to "hidden" for these pages.
-  default: 'Also, this field has some default text.  Give your editing team a head
-    start with fancy Default Text TM '
+  default: Also, this field has some default text.  Give your editing team a head
+    start with fancy Default Text TM
 - type: select
   name: select_from_related_blue_pages
   config:
