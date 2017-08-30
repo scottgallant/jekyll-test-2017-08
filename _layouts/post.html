@@ -72,6 +72,15 @@ layout: default
       {% endfor %}
     </div>
 
+    <div class="post-content">
+      <h2>Image</h2>
+      {% if page.image %}
+        <img src="{{ page.image | prepend:site.baseurl }}">
+      {% else %}
+        <em>Empty</em>
+      {% endif %}
+    </div>
+
   {% endif %}
 
   <div class="post-content">
