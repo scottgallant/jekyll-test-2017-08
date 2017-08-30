@@ -30,8 +30,8 @@ fields:
       wysiwyg: true
       schema:
         format: html
-    label: Lots o' text
-    name: lots_o__text
+    label: Pretty Text
+    name: pretty_text
     description: This is a text area with WYSIWYG super powers (can also be set to
       Markdown)
 - type: datetime
