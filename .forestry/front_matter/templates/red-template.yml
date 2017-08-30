@@ -6,6 +6,10 @@ fields:
   label: Hidden body
   default: The big WYSIWYG body editor in the right column is set to "hidden" for
     these pages.
+- type: datetime
+  default: Invalid date
+  label: Date and time
+  name: date_and_time
 - type: tag_list
   name: tags
   label: Tags
@@ -35,14 +39,6 @@ fields:
   name: turned_on
   label: Turned on?
   description: Boolean
-- type: datetime
-  default: Invalid date
-  label: Date and time
-  name: date_and_time
 - type: image_gallery
   name: gallery_field__lots_of_images_go_here__
   label: 'Gallery field. Lots of images go here. '
-- type: file
-  name: image_or_file_upload
-  label: Image or file upload
-  description: 'If you upload a PDF, this will look a little different. '
