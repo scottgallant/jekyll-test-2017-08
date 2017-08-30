@@ -5,6 +5,6 @@ hidden_body: The big WYSIWYG body editor in the right column is set to "hidden" 
 tags:
 - apples
 - oranges
-date_and_time: Invalid date
 date: 2017-08-29 22:08:38 +0000
+layout: red
 ---

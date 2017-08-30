@@ -6,7 +6,7 @@ fields:
   label: Title
   default: ''
 - type: datetime
-  default: Invalid date
+  default: ''
   label: Date
   name: date
 - type: tag_list
