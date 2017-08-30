@@ -40,5 +40,6 @@ fields:
   label: Turned on?
   description: Boolean
 - type: image_gallery
-  name: gallery_field__lots_of_images_go_here__
-  label: 'Gallery field. Lots of images go here. '
+  name: red_gallery_field
+  label: 'Red Gallery '
+  description: 'FYI: You can choose an upload directory for your images in your settings'
