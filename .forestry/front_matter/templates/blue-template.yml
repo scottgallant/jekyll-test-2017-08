@@ -17,15 +17,6 @@ fields:
   label: Gallery
   description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
     users to crop images on the fly here
-- type: textarea
-  name: wysiwyg
-  label: Lots o' text
-  description: This is a text area with WYSIWYG super powers (can also be set to Markdown)
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-      flavour: CommonMark
 - type: text
   name: blue
   label: layout
@@ -40,9 +31,6 @@ fields:
   - type: text
     name: name_of_bus
     label: Bus Name
-  - type: ''
-    name: bus_number
-    label: Bus number
   - type: list
     name: tag
     label: Red Pages
@@ -54,3 +42,12 @@ fields:
         section: red
     description: Select from Red Pages here (as you add more Red pages, they'll show
       up here)
+  - type: textarea
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+    label: Lots o' text
+    name: lots_o__text
+    description: This is a text area with WYSIWYG super powers (can also be set to
+      Markdown)
