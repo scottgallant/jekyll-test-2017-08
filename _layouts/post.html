@@ -11,18 +11,64 @@ layout: default
     </time>
   </header>
 
-  <!-- loop through Front Matter -->
-  <h2>Tags</h2>
-  <ul>
-    {% for tag in page.tags %}
-    <li>{{ tag }}</li>
-    {% endfor %}
-  </ul>
+  {% if page.collection == "red" %}
+    <h1 style="background: red; color: white; padding: 10px; display: inline-block;">Red Page Front Matter Data</h1>
+    <div class="post-content">
+      <h3>Tags</h3>
+      <ul>
+        {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </div>
 
-  <h2>Textarea</h2>
-  {{ page.textarea }}
+    <div class="post-content">
+      <h3>Textarea</h3>
+      {{ page.textarea }}
+    </div>
 
-  <div class="post-content" itemprop="articleBody">
+    <div class="post-content">
+      <h2>Red Gallery</h2>
+      {% if page.red_gallery_field %}
+        {{ page.red_gallery_field }}
+      {% else %}
+        <em>Empty</em>
+      {% endif %}
+    </div>
+
+    <div class="post-content">
+      <h2>Related Pages (from Red Collection)</h2>
+      {% if page.select_from_related_red_pages %}
+        {{ page.select_from_related_red_pages }}
+      {% else %}
+        <em>Empty</em>
+      {% endif %}
+    </div>
+
+    <div class="post-content">
+      <h2>Boolean</h2>
+      {{ page.turned_on }}
+    </div>
+  {% else if page.collection == "blue" %}
+    <h1 style="background: blue; color: white; padding: 10px; display: inline-block;">Blue Page Front Matter Data</h1>
+
+    <div class="post-content">
+      <h2>Bus Schedules</h2>
+      {% for bus_schedules in page.bus_schedules %}
+        <p>{{ name_of_bus }}</p>
+        <p>{{ pretty_text }}</p>
+        <ul>
+          {% for tag in tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+
+
+  <div class="post-content">
     {{ content }}
   </div>
 

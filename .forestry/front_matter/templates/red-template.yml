@@ -30,7 +30,7 @@ fields:
   label: 'Red Gallery '
   description: 'FYI: You can choose an upload directory for your images in your settings'
 - type: select
-  name: select_from_related_blue_pages
+  name: select_from_related_red_pages
   config:
     source:
       type: pages
