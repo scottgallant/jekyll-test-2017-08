@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 fields:
 - type: select
   name: select_from_related_blue_pages
