@@ -8,5 +8,5 @@ bus_schedules:
   - _red/index.md
   - _red/wow.md
   pretty_text: "<strong>asdf</strong> asdf"
-gallery: ''
+gallery: "/images/Screen Shot 2017-08-27 at 2.05.36 PM.png"
 ---
