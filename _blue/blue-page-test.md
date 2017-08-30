@@ -8,7 +8,8 @@ bus_schedules:
   - _red/index.md
 date: 2017-08-30 00:00:00 +0000
 gallery: "/uploads/2017/08/30/test.pdf"
-title: Blue page test
+title: Blue Test Page
+layout: blue
 ---
 
 
