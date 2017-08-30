@@ -31,7 +31,7 @@ layout: default
     <div class="post-content">
       <h2>Red Gallery</h2>
       {% if page.red_gallery_field %}
-        {{ page.red_gallery_field }}
+        <img src="{{ page.red_gallery_field | prepend:site.baseurl }}" style="width: 200px;">
       {% else %}
         <em>Empty</em>
       {% endif %}
