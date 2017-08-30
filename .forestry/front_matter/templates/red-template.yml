@@ -7,8 +7,8 @@ fields:
   default: ''
 - type: datetime
   default: Invalid date
-  label: Date and time
-  name: date_and_time
+  label: Date
+  name: date
 - type: tag_list
   name: tags
   label: Tags
