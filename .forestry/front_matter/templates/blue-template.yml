@@ -52,7 +52,3 @@ fields:
   description: This field has a default value. So all new pages will automatically
     be set to "blue"
   default: blue
-- type: image_gallery
-  name: image_gallery
-  label: Image gallery
-  description: Just a plain old array of strings (that map to images)
