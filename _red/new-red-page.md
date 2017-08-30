@@ -5,7 +5,7 @@ tags:
 - apples
 - oranges
 - grapes
-hidden_body: The <strong>big WYSIWYG body editor </strong>in the right column is set
+textarea: The <strong>big WYSIWYG body editor </strong>in the right column is set
   to "hidden" for these pages.<br><br>…Also, this field has some default text. <br>
 layout: post
 select_from_related_blue_pages: _red/index.md
