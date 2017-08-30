@@ -41,3 +41,8 @@ fields:
   name: turned_on
   label: 'Is it on? '
   description: Boolean
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: post
