@@ -1,3 +1,53 @@
 ---
 hide_body: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Title
+  description: 'This is a title field. Good for a plain ol'' string. '
+- type: datetime
+  name: date
+  label: Date
+  description: 'This is a date field. But it''s hidden (from editors). '
+  hidden: true
+  config:
+    date_format: MM/DD/YYYY
+- type: file
+  name: gallery
+  label: Gallery
+  description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
+    users to crop images on the fly here
+- type: textarea
+  name: wysiwyg
+  label: Lots o' text
+  description: This is a text area with WYSIWYG super powers (can also be set to Markdown)
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+      flavour: CommonMark
+- type: text
+  name: blue
+  label: layout
+  description: This field has a default value. So all new pages will automatically
+    be set to "blue"
+  default: blue
+- type: field_group_list
+  label: Bus Schedules
+  name: bus_schedules
+  description: 'This is a repeatable group of fields. It can be infinitely nested. '
+  fields:
+  - type: text
+    name: name_of_bus
+    label: Name of bus
+  - type: ''
+    name: bus_number
+    label: Bus number
+  - type: select
+    name: red_page
+    config:
+      source:
+        type: pages
+        section: red
+    label: Related Red Page
+    description: 'Select from the "Red" pages '
