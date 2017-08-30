@@ -16,12 +16,11 @@ fields:
   - type: text
     name: name_of_bus
     label: Bus Name
-    default: Red Bus
+    default: ''
   - type: list
     name: tag
     label: Red Pages
-    default:
-    - _red/index.md
+    default: []
     config:
       use_select: true
       source:
