@@ -42,8 +42,8 @@ fields:
   config:
     date_format: MM/DD/YYYY
 - type: file
-  name: gallery
-  label: Gallery
+  name: image
+  label: Image
   description: Go ahead, try dragging an image or PDF here.  Soon, we'll allow your
     users to crop images on the fly here
 - type: text

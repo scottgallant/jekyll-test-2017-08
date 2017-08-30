@@ -12,7 +12,8 @@ layout: default
   </header>
 
   {% if page.collection == "red" %}
-    <h1 style="background: red; color: white; padding: 10px; display: inline-block;">Red Page Front Matter Data</h1>
+
+    <h1 style="background: red; color: white; padding: 10px; display: inline-block;">Red Page</h1>
     <div class="post-content">
       <h3>Tags</h3>
       <ul>
@@ -49,24 +50,29 @@ layout: default
       <h2>Boolean</h2>
       {{ page.turned_on }}
     </div>
+
   {% else if page.collection == "blue" %}
-    <h1 style="background: blue; color: white; padding: 10px; display: inline-block;">Blue Page Front Matter Data</h1>
+
+    <h1 style="background: blue; color: white; padding: 10px; display: inline-block;">Blue Page</h1>
 
     <div class="post-content">
       <h2>Bus Schedules</h2>
-      {% for bus_schedules in page.bus_schedules %}
-        <p>{{ name_of_bus }}</p>
-        <p>{{ pretty_text }}</p>
+      {% for bus_schedule in page.bus_schedules %}
+        <h3>Name</h3>
+        <p>{{ bus_schedule.name_of_bus }}</p>
+        <h3>Pretty Text</h3>
+        <p>{{ bus_schedule.pretty_text }}</p>
+        <h3>Related Red Pages</h3>
         <ul>
-          {% for tag in tags %}
+          {% for tag in bus_schedule.tag %}
           <li>{{ tag }}</li>
           {% endfor %}
         </ul>
+        <hr>
       {% endfor %}
     </div>
+
   {% endif %}
-
-
 
   <div class="post-content">
     {{ content }}
